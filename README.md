@@ -1,4 +1,4 @@
-# Codeforces
+# [Codeforces](https://en.wikipedia.org/wiki/Codeforces)
 Codeforces is a Russian website dedicated to competitive programming.
 
 ## Oerview
