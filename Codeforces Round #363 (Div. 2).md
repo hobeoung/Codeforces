@@ -37,4 +37,5 @@ int main()
 	if (flag == 0)printf("-1\n");
 	else  printf("%d" , (min+1) / 2);
 	return 0;
-}```
+}
+```
