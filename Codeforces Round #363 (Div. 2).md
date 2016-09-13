@@ -3,7 +3,7 @@
 ## [A. Launch of Collider](http://codeforces.com/contest/699/problem/A)
 
 ### 문제 설명
-
+문제에 대한 설명을 올립니다
 ### 코드
 ```C++
 #include<stdio.h>
@@ -25,7 +25,7 @@ int main()
 	}
 	int min = inf;
 	int flag = 0;
-	
+
 	for (int i = 0; i < N-1; i++)
 	{
 		if (str[i] == 'R' && str[i+1] == 'L')
@@ -37,7 +37,7 @@ int main()
 			}
 		}
 	}
-	
+
 	if (flag == 0)printf("-1\n");
 	else  printf("%d" , (min+1) / 2);
 	return 0;
