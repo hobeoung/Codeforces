@@ -63,7 +63,12 @@ for student in datas {
 }
 print(riches)
 
-
+datas.map {
+    if ( $1.values.reduce(0) { return $0 + $1 } > NUMBER_RICH) {
+        riches.append($0)
+    }
+}
+print(riches)
 
 
 //p5
@@ -76,5 +81,16 @@ for i in 0...(p1.count-1){
     p3 += [p1[i] , p2[i]]
 }
 print(p3)
+
+
+let p1 = [ 1, 2, 3, 4, 5]
+let p2 = [ 6, 7, 8, 9, 10]
+var p3: [Int] = []
+    
+p3 = p1;
+p2.enumerate().map {
+    p3.insert($1 ,atIndex: $0*2 + 1)
+}
+print(p3);
 
 ```
