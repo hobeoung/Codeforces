@@ -35,6 +35,16 @@ for i in evens2 {
 }
 print(evenSum)
 
+p3.
+var even2 = [Int](1...10)
+var sum = 0
+even2.filter({ (v:Int) -> (Bool) in
+    if v % 2 == 0 { sum += v }
+    return false
+})
+
+print(sum)
+
 
 
 //p4
