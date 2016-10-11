@@ -8,6 +8,16 @@ for name in names {
     print (name + " good")
 }
 
+/p1
+let names = ["aaa", "bob" , "ccc" , "ddd"]
+
+for name in names {
+    print (name + " good")
+}
+
+let ans1 = names.map({ (a:String) -> (String) in
+    return "\(a)" + " good"
+})
 
 
 //p2
@@ -20,7 +30,22 @@ for i in 1...10 {
 }
 print(evens)
 
+//p2
+var evens = [Int]()
 
+for i in 1…10 {
+    if i % 2 == 0 {
+        evens.append(i)
+    }
+}
+print(evens)
+
+let ans2 = (1…10).filter({ (v: Int) -> (Bool) in
+    if v % 2 == 0 { return true }
+    return false
+})
+
+print(ans2)
 
 //p3
 var evens2 = [Int]()
@@ -63,12 +88,7 @@ for student in datas {
 }
 print(riches)
 
-datas.map {
-    if ( $1.values.reduce(0) { return $0 + $1 } > NUMBER_RICH) {
-        riches.append($0)
-    }
-}
-print(riches)
+
 
 
 //p5
@@ -81,16 +101,5 @@ for i in 0...(p1.count-1){
     p3 += [p1[i] , p2[i]]
 }
 print(p3)
-
-
-let p1 = [ 1, 2, 3, 4, 5]
-let p2 = [ 6, 7, 8, 9, 10]
-var p3: [Int] = []
-    
-p3 = p1;
-p2.enumerate().map {
-    p3.insert($1 ,atIndex: $0*2 + 1)
-}
-print(p3);
 
 ```
