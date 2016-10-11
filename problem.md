@@ -10,7 +10,6 @@ for name in names {
 
 
 
-
 //p2
 var evens = [Int]()
 
@@ -43,7 +42,6 @@ let datas = [ "Mike" : [ "red":3,"blue":5,"green":5],"Sangwoo": [ "red":10,"blue
 var riches:[String] = [];
 let NUMBER_RICH = 20;
 
-    
 for student in datas {
     var sumOfBeads = 0;
     for bead in student.1 {
@@ -67,7 +65,6 @@ var p3: [Int] = []
 for i in 0...(p1.count-1){
     p3 += [p1[i] , p2[i]]
 }
-
 print(p3)
 
 ```
