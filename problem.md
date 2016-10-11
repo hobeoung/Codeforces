@@ -8,6 +8,9 @@ for name in names {
     print (name + " good")
 }
 
+
+
+
 //p2
 var evens = [Int]()
 
@@ -17,6 +20,7 @@ for i in 1...10 {
     }
 }
 print(evens)
+
 
 
 //p3
@@ -32,17 +36,20 @@ for i in evens2 {
 }
 print(evenSum)
 
+
+
 //p4
 let datas = [ "Mike" : [ "red":3,"blue":5,"green":5],"Sangwoo": [ "red":10,"blue":5,"green":5],"James": [ "red":10,"blue":9,"green":4],"Sarah": [ "red":3,"blue":1,"green":100] ];
 var riches:[String] = [];
+let NUMBER_RICH = 20;
 
-
+    
 for student in datas {
     var sumOfBeads = 0;
     for bead in student.1 {
         sumOfBeads += bead.1
     }
-    if sumOfBeads > 20 {
+    if sumOfBeads > NUMBER_RICH {
         riches.append(student.0)
     }
 }
